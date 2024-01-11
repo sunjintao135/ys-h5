@@ -309,7 +309,7 @@
             getData() {
                 const params = new URLSearchParams(location.search)
                 let id = params.get('hydrantId');
-                let baseUrl = location.origin;
+                let baseUrl = "http://123.57.75.227:8081"; //location.origin;
                 // 发起 GET 请求
                 axios.get(baseUrl+'/yunshang/hydrant/check-log/getCheckLog?hydrantId='+id+'&queryDate='+this.currentDate1)
                     .then(response => {
